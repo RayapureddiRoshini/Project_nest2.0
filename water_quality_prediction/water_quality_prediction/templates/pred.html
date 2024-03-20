@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Water Quality Prediction Result</title>
+<style>
+    body {
+        background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnr1Mj6d7-D24uCkoUdH7NkwWsePa_w8-clw&usqp=CAU'); /* Background image */
+        background-size: cover; /* Cover the entire background */
+        background-position: center; /* Center the background image */
+        text-align: center; /* Align text to center */
+        padding-top: 20%; /* Adjust top padding to center the content vertically */
+    
+    }
+    h2 {
+        font-size: 38px;
+        margin-top: 5px; /* Add some top margin for spacing */
+    }
+    p {
+        font-size: 34px;
+        font-weight: bold; /* Make text bold */
+    
+    }
+
+    h1 {
+        margin-top: 0; /* Reset margin for heading */
+        font-size: 40px;
+        text-align: center; /* Center the title horizontally */
+    }
+
+    .content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column; /* Stack elements vertically */
+        margin-top: 20px;
+    }
+
+    .description {
+        width: 50%;
+        text-align: center;
+    }
+
+    .description h2 {
+        font-weight: bold;
+    }
+
+    img.center {
+        display: block; /* Make the image a block element */
+        margin: 40px auto; /* Add space around the image and center horizontally */
+        width: 40%;
+        height: auto;
+    }
+</style>
+</head>
+<body>
+<div class="container">
+    <h2>Water Quality Prediction Result</h2>
+    <p>Predicted water safety: {{ prediction }}</p>
+</div>
+</body>
+</html>
